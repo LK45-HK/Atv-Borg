@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belezas Naturais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Belezas Naturais do Mundo</h1>
+    </header>
+
+    <section id="informacoes">
+        <h2>Descubra as Belezas Naturais</h2>
+        <p>A natureza oferece muitos lugares incríveis. Explore algumas belezas naturais abaixo!</p>
+        
+        <button id="showMoreBtn">Mostrar mais</button>
+        <p id="moreInfo" style="display: none;">A Amazônia, o Monte Everest e a Grande Barreira de Coral são apenas alguns dos muitos lugares impressionantes ao redor do mundo. Vamos explorar juntos!</p>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria de Imagens</h2>
+        <div class="gallery">
+            <img src="imagens/imagem1.jpg" alt="Amazônia" class="thumbnail">
+            <img src="imagens/imagem2.jpg" alt="Monte Everest" class="thumbnail">
+            <img src="imagens/imagem3.jpg" alt="Grande Barreira de Coral" class="thumbnail">
+        </div>
+    </section>
+
+    <section id="feedback">
+        <h2>Deixe seu Feedback</h2>
+        <form id="feedbackForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required><br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required><br>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" required></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
